@@ -47,7 +47,7 @@ $(document).ready(function() {
 	});
 	
 	$('#backboneCode').click(function() {
-	  PopUP('includes\\tocode.php?codepage=../backbone/todo.html', 'backbone', 600, 950, 0);
+	  PopUP('includes\\tocode.php?codepages=../backbone/todo.html', 'backbone', 600, 950, 0);
 	});
 	
 	//
@@ -72,7 +72,7 @@ $(document).ready(function() {
 	});
 	
 	$('#jqgridCode').click(function() {
-	  PopUP('includes\\tocode.php?codepage=../jqgrid/jqgrid.php', 'jqgrid', 600, 950, 0);
+	  PopUP('includes\\tocode.php?codepages=../jqgrid/jqgrid.php', 'jqgrid', 600, 950, 0);
 	});
 	
 	//
@@ -97,7 +97,7 @@ $(document).ready(function() {
 	});
 	
 	$('#jqDragDropCode').click(function() {
-	  PopUP('includes\\tocode.php?codepage=../dragdrop/dragdrop.php', 'dragdrop', 600, 950, 0);
+	  PopUP('includes\\tocode.php?codepages=../dragdrop/dragdrop.php', 'dragdrop', 600, 950, 0);
 	});	
 
 	//
@@ -122,7 +122,7 @@ $(document).ready(function() {
 	});
 	
 	$('#datepickerCode').click(function() {
-	  PopUP('includes\\tocode.php?codepage=../datepicker/datepicker.php', 'datepicker', 600, 950, 0);
+	  PopUP('includes\\tocode.php?codepages=../datepicker/datepicker.php', 'datepicker', 600, 950, 0);
 	});	
 
 	//
@@ -147,7 +147,7 @@ $(document).ready(function() {
 	});
 	
 	$('#spinnerCode').click(function() {
-	  PopUP('includes\\tocode.php?codepage=../spinner/spinner.html', 'spinner', 600, 950, 0);
+	  PopUP('includes\\tocode.php?codepages=../spinner/spinner.html', 'spinner', 600, 950, 0);
 	});	
 
 	//
@@ -172,7 +172,7 @@ $(document).ready(function() {
 	});
 	
 	$('#tabsCode').click(function() {
-	  PopUP('includes\\tocode.php?codepage=../tabs/tabs.html', 'tabs', 600, 950, 0);
+	  PopUP('includes\\tocode.php?codepages=../tabs/tabs.html', 'tabs', 600, 950, 0);
 	});	
 
 
@@ -198,9 +198,8 @@ $(document).ready(function() {
 	});
 	
 	$('#angularjsCode').click(function() {
-	  PopUP('includes\\tocode.php?codepage=../angularjs/index.php', 'angularjs', 600, 950, 0);
+	  PopUP('includes\\multiPage.php?codepages=../angularjs/index.php~../angularjs/app/contactApp.js~../angularjs/app/partials/ContactsListAdd.html~../angularjs/app/partials/ContactsListBlock.html~../angularjs/app/partials/ContactsListShort.html~../angularjs/app/factories/factories.js~../angularjs/app/controllers/controllers.js', 'angularjs', 600, 950, 0);
 	});	
-
 
 });
 

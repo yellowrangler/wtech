@@ -7,41 +7,20 @@
 </head>
 <body>
 <pre>
+	
 <?php
-
-$displayContents = "";
-
 //
-// get pages passed in url
+// Build grid parameters passed in url
 //
-$codepages = $_GET['codepages']; // get the requested code pages to display
-
-//
-// create array from pages passed in
-//
-$pages = explode("~", $codepages);
-// print_r($pages);
-// print($pages[0]);
-
-for ($i = 0; $i < count($pages); $i++)
+$codepage = $_GET['codepage']; // get the requested code to display
+if ($codepage != "")
 {
-	$codepage = $pages[$i];
-
-	if ($i > 0)
-	{
-		$displayContents = $displayContents."<br /><br />";
-	}
-
-	$displayContents = $displayContents." ===== <br /> =====  File: $codepage<br /> ===== <br /><br />";
 	if (file_exists($codepage))
 	{
-		// print("File exists: $codepage");
 		$fh = fopen("$codepage", 'rb');
 
 		if ( $fh != false)
 		{
-			// print("File CAN be opened: $codepage");
-
 			$contents = "";
 			$results = "";
 			
@@ -56,24 +35,22 @@ for ($i = 0; $i < count($pages); $i++)
 		}
 		else
 		{
-			// print("File cant be opened: $codepage");
 			$contents = "<center><h3>Error - Code file could not be opened $codepage.</h3></center>";
 		}
 		
 	}
 	else
 	{
-		// print("File does not exists: $codepage");
 		$contents = "<center><h3>Error - Code name not valid $codepage</h3></center>";
 	}
-
-	$displayContents = $displayContents.$contents;
-
+}
+else
+{
+	$contents = "<center><h3>Error - Code name not passed in</h3></center>";
 }
 
-print $displayContents;	
+print $contents;	
 ?>
-
 </pre>		  
 </body>
 </html>

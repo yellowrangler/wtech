@@ -7,6 +7,7 @@
 </head>
 <body>
 <pre>
+
 <?php
 
 $displayContents = "";
@@ -27,12 +28,7 @@ for ($i = 0; $i < count($pages); $i++)
 {
 	$codepage = $pages[$i];
 
-	if ($i > 0)
-	{
-		$displayContents = $displayContents."<br /><br />";
-	}
-
-	$displayContents = $displayContents." ===== <br /> =====  File: $codepage<br /> ===== <br /><br />";
+	$displayContents = $displayContents."<br /><br /> ===== <br /> =====  File: $codepage<br /> ===== <br /><br />";
 	if (file_exists($codepage))
 	{
 		// print("File exists: $codepage");
